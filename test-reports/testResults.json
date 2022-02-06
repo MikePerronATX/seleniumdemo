@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-06T05:28:41.216Z",
+    "end": "2022-02-06T05:28:49.612Z",
+    "duration": 8396,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "078fd51b-f349-49d0-bad8-5e7178a09673",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "95109242-53ca-40d0-af69-731e3922e5bb",
+          "title": "add todo tests",
+          "fullFile": "/Users/michaelperron/Desktop/seleniumDemo/test/firstTest.js",
+          "file": "/test/firstTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "successfully adds a todo application",
+              "fullTitle": "add todo tests successfully adds a todo application",
+              "timedOut": null,
+              "duration": 7757,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//async function example(){\n//launch the browser\nlet driver = await new Builder().forBrowser('firefox').build();\n//navigate to app location\nawait driver.get('https://lambdatest.github.io/sample-todo-app');\n//add a to-do\nawait driver\n  .findElement(By.id('sampletodotext'))\n  .sendKeys('Learn Selenium', Key.RETURN);\n//assert\nlet todoText = await driver\n  .findElement(By.xpath('//li[last()]'))\n  .getText()\n  .then(function (value) {\n    return value;\n  });\n//assert using node\n//assert.strictEqual(todoText, \"Learn Js\");\n//assert using chai should\ntodoText.should.equal('Learn Selenium');\n//close browser\nawait driver.quit();\n//};\n//example()",
+              "err": {},
+              "uuid": "c5a93b65-3f08-44df-b823-f4138e43d71e",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c5a93b65-3f08-44df-b823-f4138e43d71e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7757,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "a8ac3045-868a-47aa-afd5-0299b22982de",
+          "title": "add another todo tests",
+          "fullFile": "/Users/michaelperron/Desktop/seleniumDemo/test/secondTest.js",
+          "file": "/test/secondTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "successfully adds another todo application",
+              "fullTitle": "add another todo tests successfully adds another todo application",
+              "timedOut": null,
+              "duration": 7853,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//async function example(){\n//launch the browser\nlet driver = await new Builder().forBrowser('firefox').build();\n//navigate to app location\nawait driver.get('https://lambdatest.github.io/sample-todo-app');\n//add a to-do\nawait driver\n  .findElement(By.id('sampletodotext'))\n  .sendKeys('Learn Selenium', Key.RETURN);\n//assert\nlet todoText = await driver\n  .findElement(By.xpath('//li[last()]'))\n  .getText()\n  .then(function (value) {\n    return value;\n  });\n//assert using node\n//assert.strictEqual(todoText, \"Learn Js\");\n//assert using chai should\ntodoText.should.equal('Learn Selenium');\n//close browser\nawait driver.quit();\n//};\n//example()",
+              "err": {},
+              "uuid": "e8a344cd-5ce5-4a7f-a9f9-bfc1b6cb2ecf",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8a344cd-5ce5-4a7f-a9f9-bfc1b6cb2ecf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7853,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testResults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/Users/michaelperron/Desktop/seleniumDemo/test-reports",
+        "reportFilename": "testResults"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
